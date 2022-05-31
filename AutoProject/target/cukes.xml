@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="12" time="115.682">
+<testcase classname="Registration | User could signup with a new account" name="sc_01 | User could register with valid data" time="14.604">
+<failure message="Unable to find element with locator By.cssSelector: div[class=&quot;result&quot;]&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'SKY-AATEF', ip: '192.168.4.180', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user click on register link...........................................passed
+When user fills personal details with valid data............................passed
+And user fills pass with valid data.........................................passed
+And user click on register button...........................................passed
+Then success message displayed..............................................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.cssSelector: div[class="result"]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SKY-AATEF', ip: '192.168.4.180', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at stepDefinition.register.regSuccessMsg(register.java:44)
+	at ✽.success message displayed(file:///C:/Users/ahmed.atef/IdeaProjects/AutoProject/src/main/resources/features/F01_register.feature:8)
+]]></failure>
+</testcase>
+<testcase classname="Login | users could login to open their accounts" name="sc_02 | user could login with valid email and password" time="6.283">
+<system-out><![CDATA[Given user should go to login page..........................................passed
+When user login with valid "email@gmail.com" and "asdf@1234"................passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User could reset his/her password successfully" name="sc_03 | User could reset his/her password successfully" time="12.8">
+<system-out><![CDATA[Given user is logged in with email and password.............................passed
+When user should click on my account link then click on change password.....passed
+And user fills old pass "asdf@1234" and new pass............................passed
+And user click on Change password button....................................passed
+Then user has changed his-her password successfully.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search | Logged User could search for any product" name="sc_04 | user could search for product using fullName" time="6.902">
+<system-out><![CDATA[When user search using the name.............................................passed
+Then user could find camera.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Logged User could switch between currencies US-Euro" name="sc_05 | user could switch between currencies US-Euro" time="4.056">
+<system-out><![CDATA[When user select Euro currency..............................................passed
+Then user could see product with Euro currency..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Logged user could select different Categories" name="sc_06 | user could select from different Categories" time="4.474">
+<system-out><![CDATA[When user could select a category...........................................passed
+And user can select sub category if found...................................passed
+Then user could see results.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Logged user could filter with color" name="sc_07| user could filter with color" time="6.019">
+<system-out><![CDATA[When user could select Apparel..............................................passed
+And user could select color gray............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Logged user could select different tags" name="sc_08 | user could select different tags" time="9.777">
+<system-out><![CDATA[When user search using the name of the product..............................passed
+And user could select "awesome" tag.........................................passed
+And user could select "book" tag............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Logged user could add different products to Shopping cart" name="sc_09 | user could add different products to Shopping cart" time="12.68">
+<system-out><![CDATA[When user could select a category...........................................passed
+And user can select sub category if found...................................passed
+And user click add item to cart.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Logged user could add different products to Wishlist" name="sc_10 | user could add different products to Wishlist" time="9.131">
+<system-out><![CDATA[Given user could select a category..........................................passed
+And user can select sub category if found...................................passed
+And user click add to Wishlist..............................................passed
+Then added successfully to Wishlist.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Logged user could add different products to compare list" name="sc_11 | user could add different products to compare list" time="5.709">
+<system-out><![CDATA[Given user could select a category..........................................passed
+And user can select sub category if found...................................passed
+And user click add to compare list..........................................passed
+And user click add to compare list..........................................passed
+Then added successfully to compare list.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Create successful Order" name="sc_12 | user could create a successful Order" time="22.95">
+<failure message="Unable to find element with locator By.id: billing-address-select&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'SKY-AATEF', ip: '192.168.4.180', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user is logged in with email and password.............................passed
+When user could select a category...........................................passed
+And user can select sub category if found...................................passed
+And user click add item to cart.............................................passed
+When user click on shopping cart............................................passed
+And user accept terms of service............................................passed
+And user choose checkout....................................................passed
+And user fills all checkout data............................................failed
+And user click on continue..................................................skipped
+And user click on continue-shipping.........................................skipped
+And user click on continue-payment-method...................................skipped
+And user click on continue-payment-info.....................................skipped
+And user click on confirm-order.............................................skipped
+Then user order products successfully.......................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.id: billing-address-select
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SKY-AATEF', ip: '192.168.4.180', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at stepDefinition.SuccessOrder.fillcheckoutdata(SuccessOrder.java:31)
+	at ✽.user fills all checkout data(file:///C:/Users/ahmed.atef/IdeaProjects/AutoProject/src/main/resources/features/F12_successOrder.feature:16)
+]]></failure>
+</testcase>
+</testsuite>

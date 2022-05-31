@@ -1,0 +1,2 @@
+file:src/main/resources/features/F12_successOrder.feature:5
+file:src/main/resources/features/F01_register.feature:3
